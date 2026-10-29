@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slate"
+version = "0.1.0"
+description = "A dependency-free Python toolkit for typed data validation and transformation."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.9"
+authors = [{ name = "WsNodeX" }]
+keywords = [
+    "validation",
+    "schema",
+    "data-contract",
+    "typed",
+    "serialization",
+    "deserialization",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Homepage = "https://github.com/WsNodeX/slate"
+Repository = "https://github.com/WsNodeX/slate"
+
+[project.scripts]
+slate = "slate.cli:main"
+
+[tool.setuptools]
+packages = ["slate"]
