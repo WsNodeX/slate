@@ -10,6 +10,11 @@ Run with::
 
 import json
 
+import os
+import sys
+
+# Run from a fresh clone without `pip install -e .`.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from slate import (
     Model,
     Str,
