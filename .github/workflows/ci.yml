@@ -28,3 +28,11 @@ jobs:
         run: |
           python -m slate.cli version
           python -m slate.cli demo
+
+        # The examples are the first thing a visitor runs and nothing was
+        # checking them. All four repositories here had at least one example
+        # that failed from a fresh clone.
+        - name: Run examples
+          run: |
+            python examples/demo.py
+            python examples/api_example.py
